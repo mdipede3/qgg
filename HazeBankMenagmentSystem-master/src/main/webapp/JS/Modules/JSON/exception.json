@@ -1,0 +1,7 @@
+{
+"exception":[
+  "<img class='logo_warning' src='Image/warning.png'><img>Pola nie mogą być puste",
+  "<img class='logo_warning' src='Image/warning.png'><img>Bledny zapis liczby",
+  "<img class='logo_warning' src='Image/warning.png'><img>Liczba nie może być ujemna"
+]
+}

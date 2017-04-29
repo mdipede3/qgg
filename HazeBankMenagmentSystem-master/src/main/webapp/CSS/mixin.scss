@@ -1,0 +1,33 @@
+@mixin size ($width, $height){
+  width : $width;
+  height: $height;
+}
+
+@mixin marginToZero (){
+  margin: 0;
+  paddign: 0;
+}
+
+@mixin addFont ($name, $size, $color){
+  font-family: $name;
+  font-size: $size;
+  color: $color;
+}
+
+@mixin padding ($pad_top, $pad_bot, $pad_left, $pad_right){
+  padding-top: $pad_top;
+  padding-bottom: $pad_bot;
+  padding-left: $pad_left;
+  padding-right:$pad_right;
+}
+
+@mixin margin ($margin_top, $margin_bottom){
+  margin-top: $margin_top;
+  margin-bottom: $margin_bottom;
+}
+
+@mixin flushStyleButton (){
+  text-decoration:none;
+  background-color:inherit;
+  border:inherit;
+}

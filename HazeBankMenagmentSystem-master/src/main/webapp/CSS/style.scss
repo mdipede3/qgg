@@ -1,0 +1,131 @@
+
+@import "mixin.scss";
+@import "var.scss";
+@import url('https://fonts.googleapis.com/css?family=Baloo+Bhaina');
+
+
+html,body {
+  @include size (100%,100%);
+}
+
+html,body,p,section {
+  @include marginToZero ();
+}
+
+body {
+  background-color: $color_background;
+}
+
+p.logo {
+  @include size (50%,0);
+  @include addFont ('Baloo Bhaina' , 4em , white);
+  margin:auto;
+  text-align:center;
+}
+
+img.logo_coin_size {
+  @include size (56px,56px);
+}
+img.logo_warning{
+  @include size (56px,56px);
+  transform:translateY(25%);
+}
+header{
+  @include padding (100px, 100px, 0 ,0 );
+}
+main.app {
+  @include size (50%,auto);
+  margin:auto;
+}
+
+p.app_text {
+  @include addFont('Baloo Bhaina', 2em, white);
+  @include padding (0, 20px, 0, 0);
+  text-align: center;
+}
+p.app_text_exception{
+  @include addFont('Baloo Bhaina', 0.5em, white);
+  @include padding (0, 20px, 0, 0);
+  text-align:left;
+  border:1px solid white;
+}
+select.app_select {
+  @include margin (20px,0);
+text-align: center;
+float: left;
+}
+section.app_buttons {
+  @include margin (100px,0);
+  @include size (100%,auto);
+  float:left;
+}
+button.app_button{
+  @include flushStyleButton ();
+  cursor:pointer;
+}
+img.app_button_image_pdf{
+  @include size (108px,auto);
+  transform: translateX(-10px);
+}
+img.app_button_image_html{
+  @include size (82px,auto);
+  transform:translateY(-12px);
+}
+p.app_buttons_line{
+  display:inline;
+  float:left;
+  transform:translateY(-50%);
+  text-transform: uppercase;
+}
+p.app_buttons_line_padding{
+  @include padding (0,0,20px,0);
+}
+div.app_buttons_row{
+  margin-top:130px;
+}
+main.app_table_contener{
+  @include size (80%,auto);
+  margin:auto;
+}
+table.app_table{
+  @include size (80%,auto);
+  margin:auto;
+  text-align:center;
+}
+
+td.app_result_cell{
+  @include addFont ('Baloo Bhaina' , 1em , white);
+  border-bottom:1px solid white;
+}
+th{
+  border-bottom:1px solid white;
+  @include addFont ('Baloo Bhaina' , 1.25em , white);
+}
+form {
+  @include addFont ('Baloo Bhaina' , 1em , white);
+  text-align:right;
+}
+div.app_table_button_contener{
+  @include size (80%,auto);
+  @include margin (40px,40px);
+  @include addFont ('Baloo Bhaina' , 1em , white);
+  margin:auto;
+}
+p.app_table_button_row{
+  display:inline;
+}
+@media (max-width:1100px){
+  @import "media_width_1100.scss";
+}
+@media (max-width:800px){
+  @import "media_width_800.scss";
+}
+@media (max-width:550px){
+  @import "media_width_550.scss";
+}
+@media (max-width:500px){
+  @import "media_width_500.scss";
+}
+@media (max-width:280px){
+  @import "media_width_220.scss";
+}

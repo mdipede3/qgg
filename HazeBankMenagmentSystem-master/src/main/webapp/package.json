@@ -1,0 +1,24 @@
+{
+  "name": "hazebank_creditsystem",
+  "version": "1.0.0",
+  "description": "client API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PatrykMaternicki/dev_HazeBankCreditSystem.git"
+  },
+  "dependencies":{
+    "babel-core": "~6.24.0",
+    "babel-loader":"~6.4.1",
+    "babel-preset-es2015": "~6.24.0"
+  },
+  "author": "Patryk Maternicki",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PatrykMaternicki/dev_HazeBankCreditSystem/issues"
+  },
+  "homepage": "https://github.com/PatrykMaternicki/dev_HazeBankCreditSystem#readme"
+}

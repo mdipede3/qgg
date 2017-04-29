@@ -1,0 +1,9 @@
+@import "mixin.scss";
+
+  p.logo {
+    font-size:3em;
+  }
+  
+  img.logo_coin_size{
+  @include size (48px,48px);
+  }
